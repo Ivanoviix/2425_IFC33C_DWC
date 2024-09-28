@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERADORES</title>
+</head>
+<body>
+    <script>
+
+        var x = 5;
+        var y = 7;
+
+        var esVerdad = true;
+
+        var a = "Ho";
+        var b = "la";
+
+        var c = a + b
+        console.log(c);
+
+
+        x = x * 4;
+        x = x + 4;
+        x = x - 4;
+        x = x / 4;
+        x = x % 4; // Módulo - Obtener el resto de una división
+        x = x ** 4; // Exponente
+
+        x++; // x = x + 1;
+        x--; // x = x - 1;
+
+        x+=4; // x = x + 4;
+        x-=4; // x = x - 4;
+        x*=4; // x = x * 4;
+        x/=4; // x = x / 4;
+        x**=4; // x = x ** 4;
+        x%=4; // x = x % 4;
+
+
+        // Operadores de comparación
+        /* 
+            == -> Igual
+            != -> Distinto
+            >= -> Mayor o igual
+            > -> Mayor
+            <= -> Menor o igual
+            < -> Menor
+            ? // OPERADOR TERNARIO - > (Y < X) ? "hola":"adios"
+
+
+            === -> Igual en valor y en tipo
+            !== -> Distinto en valor o distinto en tipo
+        */
+
+        // Para las comparaciones utilizaremos === y !=
+
+        var x = 5;
+        console.log("x == 5", x == 5); // true
+        console.log("x == 5", x == '5'); // true
+        console.log(typeof x, typeof '5');
+        console.log("x === 5", x === 5); // true
+        console.log("x === 5", x === '5'); // false
+
+        console.log("-----------------------------")
+        // var x = 7;
+        console.log("x != 5", x != 5); // true, por que X es distinto a 7, si es 5, es false
+        console.log("x != 5", x != '5'); // true, por que X es distinto a 7
+        console.log(typeof x, typeof '5');
+        console.log("x !== 5", x !== 5); // true, por que X es distinto a 7
+        console.log("x !== 5", x !== '5'); // true, por que es distinto a 7/5, ya que es string, es mas estricto / 
+
+        // Cuando hagamos peticiones asíncronas debemos asegurarnos
+        // de que los números son números y los strings son strings
+
+        var k = 9;
+        var l = "7";
+        console.log(k + l) // Sale 97, esta mal, por que es int + string
+        // Mejor usar parseInt para asegurar que sean números.
+        console.log(parseInt(k) + parseInt(l)); // Da 16
+
+        // Operadores lógicos
+        /*
+            %% -> AND
+            || -> OR
+            !  -> NOT
+
+        */
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <script>
+        var x = "Hola1"; // En el string seasignan valores entre comillsa dobles ("")
+        var y = "Hola2"; // o entre comillas simples ('')
+        var z = "Hola3"; // También valen las comillas francesas (` `) desde ES6
+
+        console.log(x);
+        console.log(y);
+        console.log(z);
+        // Las comillas dobles y simples no son multilinea ()
+
+        var w = "Hello, " + 
+                "how are you?"
+
+        console.log(w);
+
+        // Para hacerlo multilinea necesitamos hacer un concat
+        var q = w.concat(" All good, and you?") // sirve para concatenar
+
+        console.log(q)
+
+
+        var t = "Hello \"Ivan\" "; // Utilizamos barra para que se vea asi en el texto: Hello "Ivan" 
+        console.log(t);
+
+        var s = 'Good Bye \'Ivan\' '; // Utilizamos barra para que se vea asi en el texto: Good Bye 'Ivan' 
+        console.log(s);
+
+        var r = "My name is 'Ivan' "; // Diferente manera: My name is 'Ivan' 
+        console.log(r);
+
+        var rr = 'Bye, "Ivan" '; // Diferente manera: Bye, "Ivan" 
+        console.log(rr);
+
+
+        // PROPIEDADES
+        console.log(rr.length) // La cantidad de caracteres que hay en esa variable.
+        
+        // Los índices del String siempre empezarán en 0
+        console.log(rr[0])
+
+        for (let i = 0; i <= rr.length; i++) { // Asi saldrá que es undefined
+            console.log(rr[i]);
+        }
+
+        for (let i = 0; i <= rr.length - 1; i++) { // Asi no saldrá que es undefined
+            console.log(rr[i]); // Saldrá el rr letra, enter, letra, enter
+        }
+
+
+        console.log("En la posición 6 del string rr tenemos la letra: ", rr.charAt(6)); // Sale I
+        console.log("El codigo UTF-16 del carácter de la posicion 6 es: ", rr.charCodeAt(6)) // Sale 73
+        console.log(rr.indexOf("I", 3)); // A partir de la posicion donde quieres que busque
+        console.log(rr.search("I")) /// Posición 6 del string
+        console.log(rr.includes("ye")) // Sale True por que esta "ye" del string que tiene "B'ye'"
+        console.log(rr.includes("t")) // Sale False por que no sale"
+
+
+    </script>
+</body>
+</html>

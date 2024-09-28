@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <script>
+        // No se distingue entre números enteros y flotantes en JavaScript
+        // 64 bits en punto flotante IEEE 754 (Organismos que hacen distintos estanderes, IEEE 754 es uno de ellos)
+
+        var x = 3.987654;
+        var y = 4;
+        var a = "'99'"; // Es un string, no numero
+
+        Number.MAX_VALUE; // Objeto Number
+        Number.MIN_VALUE;
+
+        console.log(Number.MAX_VALUE); // 1.7976931348623157e+308 (elevado a 308)
+        console.log(Number.MIN_VALUE); // 5e-324 (elevado a menos 324)
+
+        console.log("Variables sin modificar", x, y, a)
+
+        var z = parseInt(a); // Converitmos el String 99 de la variable "a" a int
+        console.log(z, typeof z); // 99 number
+
+        var zzz = parseInt(x); // Quita las decimales, sería "3"
+        console.log(zzz);
+
+        var zz = parseFloat(y);
+        console.log(zz);
+
+        var w = parseInt(x * y); //15, 3 * 4 = 15
+        console.log(w);
+
+        var s = x.toFixed(2) // Para indicar que queremos sólo 2 de decimales (redondea la decimal)
+        console.log(s);
+
+        var b = "hola"; // String
+        var c = parseInt(b);
+        console.log(c); // Le da un valor, en este caso NaN
+
+        console.log(Number.isNaN(b)); // False, pregunta si es NaN, pero como no lo es, es False
+        console.log(Number.isNaN(c)); // True, pregunta si es NaN, pero como lo es, es True
+        console.log(Number.isNaN(x)); // False, pregunta si es NaN, pero como no lo es, es False
+        console.log(isNaN(b)); // ??? Tiene que ver la profe por que es true, no deberia ser true
+        
+    </script>
+</body>
+</html>

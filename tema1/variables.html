@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <script>
+        var a = null;   // TIPO NULL
+        var b;          // TIPO UNDEFINED
+        var c = false;  // TIPO BOOLEAN
+        var d = 4;      // TIPO NUMBER
+        var e = 5.6;    // TIPO NUMBER
+        var f = "Hello" // TIPO STRING
+        // TIPO OBJECT
+        var g = {
+            nombre: "Iván",
+            apellidos: "Martín Abbassi"
+        };
+
+        []
+
+        console.log(a, b, c, d, e, f, g);
+        console.log(typeof a);
+        console.log(typeof b);
+        console.log(typeof c);
+        console.log(typeof d);
+        console.log(typeof e);
+        console.log(typeof f);
+        console.log(typeof g);
+
+        // Los tipos de las variables son dinámicos 
+
+        a = 3;
+
+        console.log(a);
+        console.log(typeof a);
+
+        // var -> para declarar variables (funciona en un ambito de función)
+        // ES6 es ECMAScript 6 -> declarar las variables con let o const ()
+        
+        // AMBITO
+        var p1 = "hola";
+        function prueba(p1) { // si no lo pasamos por parametro, el adios se pasa a la linea 52, eso no esta bien.
+
+            p1 = "adios"
+            console.log(p1);
+        }
+// ---------------------------------------------------------------------------------------------------------
+
+        prueba(); // así si
+        console.log(p1); // así no es lo correcto
+
+// ---------------------------------------------------------------------------------------------------------
+        z = 99;
+        console.log(z); // Funciona pero no debemos hacerlo. MALA PRACTICA... PROVOCA HOISTING
+
+// ---------------------------------------------------------------------------------------------------------
+
+
+
+
+    </script>
+</body>
+</html>

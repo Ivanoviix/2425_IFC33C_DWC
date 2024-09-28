@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built-In Objects</title>
+</head>
+<body>
+<!--Son objetos ya creados para la declaración de variables.--> 
+
+    <script>
+        /*
+            BUILT-IN OBJECTS (MÁS COMUNES):
+            String()
+            Number()
+            Boolean()
+            Array()
+            Object()
+            Function()
+            RegExp()
+            Date()
+            Error()
+            Symbol
+        */
+
+        var str1 = new String("Hola"); // TIPO OBJETO
+        var str2 = "adios";  // TIPO STRING
+
+        console.log(str1, str2);
+        console.log(typeof str1, typeof str2);
+        console.log("Primera letra de HOLA", str1[0]);
+        console.log("Segunda letra de ADIOS", str2[1]);
+
+        // En ambos casos se pueden utilizar los mismos metodos/casos
+        
+        var array1 = new Array(1,2,3); // dos maneras distintas de hacerlo
+        var array2 = [4,5,6];
+
+        console.log(array1, array2);
+        console.log(typeof array1, typeof array2);
+        console.log(array1[0]);
+        console.log(array2[0]);
+
+        for (i=1; i <= array1.length; i++) {
+            console.log(i) // saldra 1 enter 2 enter 3 
+        }
+
+    
+
+
+    </script>
+    
+</body>
+</html>
