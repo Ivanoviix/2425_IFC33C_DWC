@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUCLES</title>
+</head>
+<body>
+    <script>
+
+        function Usuario(userName, email, name) {
+            this.userName = userName;
+            this.email = email;
+            this.name = name
+        }
+
+        var usuario1 = new Usuario("Ivanovix", "ivanmartin@paucasesnovescifp.cat", "Iván");
+        var usuario2 = new Usuario("Ruber", "roberto@paucasesnovescifp.cat", "Roberto");
+        var usuario3 = new Usuario("Kunsi", "facundo@paucasesnovescifp.cat", "Facundo");
+        
+        // Dos maneras de hacerlo
+        var usuarios = [usuario1, usuario2, usuario3]; // Es mejor esta
+     // var usuarios = new Array[usuario1, usuario2, usuario3]; 
+
+        var i = 0;
+        while (i < usuarios.length) {
+            console.log(usuarios[i].userName);
+            i++;
+        }
+
+        for (var i = 0; i < usuarios.length; i++) { 
+            console.log(usuarios[i].userName)
+        }
+
+
+    </script>
+</body>
+</html>

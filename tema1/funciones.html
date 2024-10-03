@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCIONES</title>
+</head>
+<body>
+    <script>
+
+    function suma(a,b) {
+        return a + b; // Para que nos devuelva la suma.
+    }
+    console.log("La función de suma: 2 + 3", suma(2,3)); // Suma tiene que recibir 2 parametros "a" y "b" para que funcione.
+
+
+    // Las funciones en JS son valores.
+    var a = suma(4,5); 
+    console.log(a);
+
+    var b = suma; // Las funciones las podemos asingar a una variable.
+    var c = b(4,5); // 9
+    console.log(b);
+    console.log(c);
+
+    // Constructor para objeto a partir de una función
+    function Persona(nombre, apellidos) {
+        this.nombre = nombre; // this: hace referencia a Persona.
+        this.apellidos = apellidos;
+    }
+
+    persona1 = new Persona("Ivan", "Martin Abbassi");
+    console.log("La persona es: ", persona1);
+
+    // Funciones anónimas | Puede tener parámetros
+    var a = function() {
+        return "Hello"
+    }
+    console.log(a()); // Necesita parentesis para que sepa que hablamos de una función, si no se piensa que es una variable.
+
+    var b = function(x) { // Con parametro
+        return "Hello " + x
+    }
+    console.log(b("Iván"));
+
+    // Funciones flecha
+    var c = () => {
+        return "Hello";
+    }
+    console.log(c);  // Se ve la función
+    console.log(c("Kiko")); // Añades algo al parametro de esa funcion flecha
+
+
+    var d = (x) => {
+        return "Good bye " + x
+    }
+    console.log(d); // Se ve la función
+    console.log(d("Kiko")); // Añades algo al parametro de esa funcion flecha
+
+
+    </script>
+</body>
+</html>

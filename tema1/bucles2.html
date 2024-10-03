@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //for
+       for(var i = 0; i < usuarios.length; i++){
+        console.log(usuarios[i].username);
+    }
+
+    for(var clave in usuarios){
+        console.log(clave);
+    }
+
+    //for in -> iterar las propiedades de un objeto
+    for(var clave in usuarios){
+        console.log(clave);
+    }
+
+    //for of -> iterar los valores 
+    for(var usuario of usuarios){
+        console.log(usuario.email);
+    }
+        
+    </script>
+</body>
+</html>

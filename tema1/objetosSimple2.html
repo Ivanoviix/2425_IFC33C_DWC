@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETOS SIMPLE</title>
+</head>
+<body>
+    <script>
+
+        // Los objetos en JS son prototípicos.
+        // Utilizan el objeto PROTOTYPE
+        var persona1 = {
+            nombre: "Ivan",
+            apellidos: "Martin Abbassi"
+        }
+        console.log("Objeto Persona: ", persona1);
+
+        console.log("Nombre: ", persona1.nombre);
+        console.log("Apellidos: ", persona1.apellidos);
+
+        persona1.numPies = 2;
+        console.log(persona1, "Número de pies: ", persona1.numPies);
+
+        console.log(persona1.numOjos); // Asi sale 'undefindes' por que no le hemos asignado un valor.
+        console.log(persona1);
+
+
+
+    </script>
+</body>
+</html>

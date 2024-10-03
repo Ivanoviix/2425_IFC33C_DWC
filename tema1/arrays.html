@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+</head>
+<body>
+   <script>
+    var frutas = ["manzana", "pera", "uva", "fresa", "mango"];
+    console.log(frutas[0], frutas[1], frutas[2], frutas[3], frutas[4]); //obtenemos los valores de cada posición del array 
+
+    frutas.push("sandia") //agregamos un nuevo valor al final del array
+    console.log(frutas);
+
+    var a = frutas.pop(); //eliminamos el último valor del array
+    console.log(frutas, frutas[0]) //mostramos el array sin el último valor
+    console.log(a) //mostramos el valor eliminado
+
+    frutas.unshift("melon"); //agregamos un nuevo valor al inicio del array
+    console.log(fruas);
+
+    var b = frutas.shift() //eliminamos el primer valor del array
+    console.log(frutas, frutas[0])  //mostramos el array sin el primer valor
+    console.log(b) //mostramos el valor eliminado
+
+    var tam = frutas.length; //obtenemos la longitud del array
+    console.log("Tamaño del array", tam);
+
+
+    // Borrar elementos del array
+    delete frutas[1]; //no es recomendable borrar elementos de un array de esta forma
+    console.log(frutas, frutas[1]);
+
+    frutas.splice(1,1) //borramos dos elementos a partir de la posición 1 solo uno. (posición, cantidad)
+    console.log(frutas, frutas[1]); //elimina elemento e índice
+
+
+    // Ordenar
+    frutas.sort(); //ordena el array alfabéticamente
+
+    </script> 
+</body>
+</html>
