@@ -1,6 +1,6 @@
 @font-face {
     font-family:'Fasterisq';
-    src: url('Fasterisq.otf');
+    src: url('./Letter/Fasterisq.otf');
     font-weight: normal;
     font-size: normal;
 }
@@ -10,11 +10,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: rgb(184, 211, 218);
 }
 
 #boton {
     background-color: gray;
-    color: white;
+    color: black;
     padding: 10px 20px;
     font-size: 16px;
     font-family: 'Fasterisq';
@@ -25,5 +27,10 @@ body {
 
 #boton:hover {
     border: 2px solid black;
-    color: rgba(255, 255, 255, 0.603);
+}
+
+img {
+    margin-bottom: 50px; 
+    width: 150px;
+    height: 150px;
 }

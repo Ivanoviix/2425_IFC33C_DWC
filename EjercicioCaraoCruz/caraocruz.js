@@ -1,15 +1,17 @@
 const cara = 1;
-
-var formula = Math.floor(Math.random() * 2 + 1); 
-console.log(formula)
+const cruz = 2
 
 function ventanaPopup(){
-    var formula = Math.floor(Math.random() * 2 + 1); 
+    var coinImage = document.getElementById("coinImage");
+    var formula = Math.floor(Math.random() * (cruz - cara + 1)) + cara; 
+    setTimeout(() => coinImage.src = "./Images/questionMark.png", 200);
 
     if (formula == cara) {
-        alert("CARA! HAS GANADO!");
+        coinImage.src = "./Images/cara.png";
+        setTimeout(()=> alert("CARA! HAS GANADO!"), 200);
     } else {
-        alert("CRUZ! HAS PERDIDO!");
+        coinImage.src = "./Images/cruz.png";
+        setTimeout(() => alert("CRUZ! HAS PERDIDO!"), 200);
     }
 }
 
