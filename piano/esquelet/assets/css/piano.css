@@ -1,4 +1,10 @@
 /*css tret de https://github.com/LFeh/piano/blob/master/dev/assets/css/style.css*/
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url('/piano/Letra/RobotoCondensed-Regular.ttf');
+}
+
 .piano {
     background: -webkit-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
     background: -moz-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
@@ -64,4 +70,101 @@
 .key .black-key.active {
     border-bottom-width: 3px;
     top: 0;
+}
+
+
+.buscador {
+    width: 350px;
+    margin: 40%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoCondensed;
+}
+
+.titulo-buscador {
+    margin: 10px 0px 10px 0px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.resultados-buscador {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 45px 0px 15px 0px;
+}
+
+.mostrar_notas {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: red;
+    font-style: white;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 1px #000000;
+    border-radius: 5px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #8e2828;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+.resultados {
+    display: block;
+    
+}  
+
+.boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_resultado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.canciones-encontradas {
+    margin: 0px 0px 0px 0px;
+}
+
+#cancionEncontrada {
+    margin: 10px 0px 0px 0px;
+
+}
+
+.letra {
+    color: red;
+    text-decoration: none;
+}
+
+tr {
+    display: flex;
+/*     flex-direction: column;*/
+    justify-content: center; 
+}
+
+td {
+    flex-direction: row;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
 }

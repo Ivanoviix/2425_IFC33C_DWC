@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -11,37 +12,81 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
     <link rel="icon" type="image/ico" href="assets/img/icons/favicon.ico">
 </head>
+
 <body>
-    <ul class="piano">
-        <li class="key">
-            <span class="white-key" id="C"></span>
-            <span class="black-key" id="Cs"></span>
-        </li>
-        <li class="key">
-            <span class="white-key" id="D"></span>
-            <span class="black-key" id="Ds"></span>
-        </li>
-        <li class="key">
-            <span class="white-key" id="E"></span>
-        </li>
-        <li class="key">
-            <span class="white-key" id="F"></span>
-            <span class="black-key" id="Fs"></span>
-        </li>
-        <li class="key">
-            <span class="white-key" id="G"></span>
-            <span class="black-key" id="Gs"></span>
-        </li>
-        <li class="key">
-            <span class="white-key" id="A"></span>
-            <span class="black-key" id="As"></span>
-        </li>
-        <li class="key">
-            <span class="white-key" id="B"></span>
-        </li>
-        <li class="key">
-            <span class="white-key" id="C2"></span>
-        </li>
-    </ul>
+    <div class="cuerpo">
+        <div>
+            <ul class="piano">
+                <li class="key">
+                    <span class="white-key" id="C"></span>
+                    <span class="black-key" id="Cs"></span>
+                </li>
+                <li class="key">
+                    <span class="white-key" id="D"></span>
+                    <span class="black-key" id="Ds"></span>
+                </li>
+                <li class="key">
+                    <span class="white-key" id="E"></span>
+                </li>
+                <li class="key">
+                    <span class="white-key" id="F"></span>
+                    <span class="black-key" id="Fs"></span>
+                </li>
+                <li class="key">
+                    <span class="white-key" id="G"></span>
+                    <span class="black-key" id="Gs"></span>
+                </li>
+                <li class="key">
+                    <span class="white-key" id="A"></span>
+                    <span class="black-key" id="As"></span>
+                </li>
+                <li class="key">
+                    <span class="white-key" id="B"></span>
+                </li>
+                <li class="key">
+                    <span class="white-key" id="C2"></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="buscador">
+            <ul class="mostrar_notas">
+                <h1 class="titulo-buscador">CERCANT...</h1>
+                <p>Do Re Mi Fa#</p>
+                <button>Esborrar</button>
+            </ul>
+
+            <ul class="resultados">
+                <h1 class="resultados-buscador">RESULTATS:</h1>
+                <div class="contenedor_resultado">
+                    <table>
+                        <tr>
+                            <td class="canciones-encontradas">
+                                <p id="cancionEncontrada">Sant Antoni i el Dimoni</p>
+                                <a href="#" class="letra">Letra</a>
+                            </td>
+                            <td class="boton">
+                                <button id="reproductor">Reproducir Canción</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="canciones-encontradas">
+                                <p id="cancionEncontrada">La Balanguera</p>
+                                <a href="#" class="letra">Letra</a>
+                            </td>
+                            <td class="boton">
+                                <button id="reproductor2">Reproducir Canción</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </ul>
+        </div>
+
+
+
+
+    </div>
 </body>
+
 </html>
