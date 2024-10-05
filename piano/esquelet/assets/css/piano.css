@@ -1,9 +1,42 @@
 /*css tret de https://github.com/LFeh/piano/blob/master/dev/assets/css/style.css*/
+@font-face {
+    font-family: BebasNue;
+    src: url('/piano/Letra/BebasNeueBold.otf');
+}
 
 @font-face {
-    font-family: RobotoCondensed;
-    src: url('/piano/Letra/RobotoCondensed-Regular.ttf');
+    font-family: Skate;
+    src: url('/piano/Letra/SkateSemiBold.otf');
 }
+
+body {
+    display: flex;
+    background-image: url('../img/background/background11.jpg');
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+h1 {
+    margin: 50px 0px 0px 0px;
+}
+
+.titulo{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-family: Skate;
+    font-size: 25pt;
+    text-shadow: 3px 3px 7px #ffffff;
+}
+
+ .cuerpo {
+    height: 100%;
+    width: 900px;
+    flex-direction: column;
+} 
 
 .piano {
     background: -webkit-linear-gradient(-65deg, #000000, #222222, #000000, #666666, #222222 75%);
@@ -15,6 +48,7 @@
     padding: 0 1% 3%;
     text-align: center;
     border-radius: 10px;
+    height: 100%;
 }
 
 .key {
@@ -74,29 +108,42 @@
 
 
 .buscador {
-    width: 350px;
-    margin: 40%;
-    margin-top: 5%;
+    margin: 3% 0% 0% 0%;
     justify-content: center;
     align-items: center;
-    font-family: RobotoCondensed;
+    font-family: BebasNue;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .titulo-buscador {
     margin: 10px 0px 10px 0px;
-    font-family: Helvetica, sans-serif;
+    font-family: BebasNue;
+    font-size: 25pt;
     font-weight: bold;
 }
 
-.resultados-buscador {
+.nota-musical {
     font-family: Helvetica, sans-serif;
+}
+
+.resultados-buscador {
+    font-family: BebasNue;
+    font-size: 25pt;
+    display: flex;
     font-weight: bold;
     text-align: center;
     margin: 45px 0px 15px 0px;
 }
 
 .mostrar_notas {
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -104,13 +151,14 @@
 }
 
 button {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.932);
     font-style: white;
-    padding: 10px 10px 10px 10px;
-    box-shadow: 1px #000000;
-    border-radius: 5px;
+    font-size: 10.5pt;
+    border: none;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 5px #00000027;
     color: white;
-    font-family: sans-serif;
+    font-family: arial;
     font-weight: 600;
 }
 
@@ -123,7 +171,13 @@ ul {
     padding: 0;
 }
 .resultados {
-    display: block;
+    margin-bottom: 3%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
     
 }  
 
@@ -141,6 +195,7 @@ ul {
 
 .canciones-encontradas {
     margin: 0px 0px 0px 0px;
+    font-family: sans-serif;
 }
 
 #cancionEncontrada {
@@ -161,7 +216,7 @@ tr {
 
 td {
     flex-direction: row;
-    width: 100%;
+    width: 40%;
 }
 
 table {
