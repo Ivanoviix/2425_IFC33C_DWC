@@ -28,19 +28,19 @@ function cercador() {
             if (posicion < cerca.length) { // Si posición es menor que el array "cerca", comprobara si la nota de la partitura coincide con la nota de "cerca"
                 if (partitura[y].nota === cerca[posicion].nota && partitura[y].tipus === cerca[posicion].tipus) { // Comparo si la nota y el tipo de nota es la misma 
                     posicion++;                                                                                   // en el array "partitura" y "cerca" sean "true"
-                } else { // Si no encuentra una coincidencia la variable "posición" vuelve a 0
+                } else { // Si no encuentra una coincidencia la variable "posición" vuelve a 0.
                     posicion = 0; // Aqui vuelvo a comprobar si mas adelante vuelve a haber alguna composición igual a las notas que se desea buscar.
                     if (partitura[y].nota === cerca[posicion].nota && partitura[y].tipus === cerca[posicion].tipus) {
                         posicion++;
                     }
                 }
             }
-
+            // Si la posicion es igual a cerca, coincidencias pasa a ser true.
             if (posicion === cerca.length) {
                 coincidencias = true;
             }
         }
-
+        // Si conicidencias es true, "hay coincidencias", si coincidencias es false, "sense resultats"
         if (coincidencias) {
             console.log("Hay coincidencias")
         } else {
@@ -49,6 +49,7 @@ function cercador() {
 
     }
 }
+
 partitures.push([
     new Nota("DO", "normal"),
     new Nota("RE", "normal"),
@@ -75,10 +76,11 @@ partitures.push([
     new Nota("FA", "normal"),
 ]) // Happy Birthday
 
+// Le damos una nota y el tipo de nota a la función.
 addCerca("MI", "normal");
 addCerca("SOL", "normal");
 
-
+// Ejecutamos al función para que se ejecute una vez dadas las notas deseadas.
 cercador();
 console.log("Estas son las partituras en las que buscas las coincidencias:", partitures)
 
