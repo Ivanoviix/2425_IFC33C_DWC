@@ -2,55 +2,57 @@
 var cerca = [];
 const partitures = []
 
-// Constructor Nota con dos propiedades, nota y tipus.
 function Nota(nota, tipus) {
-    this.nota = nota; // Tipo de nota.
-    this.tipus = tipus; // Si es normal o sostenido.
+    this.nota = nota;
+    this.tipus = tipus;
 }
 
-
-function addCerca(nomNota, tipus) { // Función que recibe dos parametros, nomNota y tipus.
-    cerca.push(new Nota(nomNota, tipus)) // Recibe un nombre y un tipo de la nota y lo mete dentro del array de "cerca"
+function Partitura(nombre, notas) {
+    this.nombre = nombre;
+    this.notas = notas; 
 }
 
-// Imprimo las partituas que le hemos pasado por parametro a la función "addCerca"
+function addCerca(nomNota, tipus) { 
+    cerca.push(new Nota(nomNota, tipus)) 
+}
+
 console.log("Buscar estas notas:", cerca)
 
 function cercador() {
-    console.log("Partituras: ", partitures); // Imprimo las partituras escritas abajo.
+    console.log("Partituras: ", partitures); 
 
     for (var x = 0; x < partitures.length; x++) {
-        let partitura = partitures[x]; // Asigno la partitura recibida a la nueva variable "partitura"
-        var posicion = 0; // Inicio un contador para tener un "registro" del array "cerca"
-        var coincidencias = false; // Una variable Booleana para ver si existen coincidencias.
+        let partitura = partitures[x].notas; 
+        let nombrePartitura = partitures[x].nombre; 
+        var posicion = 0;
+        var coincidencias = false;
 
-        for (var y = 0; y < partitura.length; y++) { // Creo un bucle
-            if (posicion < cerca.length) { // Si posición es menor que el array "cerca", comprobara si la nota de la partitura coincide con la nota de "cerca"
-                if (partitura[y].nota === cerca[posicion].nota && partitura[y].tipus === cerca[posicion].tipus) { // Comparo si la nota y el tipo de nota es la misma 
-                    posicion++;                                                                                   // en el array "partitura" y "cerca" sean "true"
-                } else { // Si no encuentra una coincidencia la variable "posición" vuelve a 0.
-                    posicion = 0; // Aqui vuelvo a comprobar si mas adelante vuelve a haber alguna composición igual a las notas que se desea buscar.
+        for (var y = 0; y < partitura.length; y++) {
+            if (posicion < cerca.length) { 
+                if (partitura[y].nota === cerca[posicion].nota && partitura[y].tipus === cerca[posicion].tipus) {
+                    posicion++;                                                                                   
+                } else { 
+                    posicion = 0; 
                     if (partitura[y].nota === cerca[posicion].nota && partitura[y].tipus === cerca[posicion].tipus) {
                         posicion++;
                     }
                 }
             }
-            // Si la posicion es igual a cerca, coincidencias pasa a ser true.
             if (posicion === cerca.length) {
                 coincidencias = true;
             }
         }
-        // Si conicidencias es true, "hay coincidencias", si coincidencias es false, "sense resultats"
         if (coincidencias) {
-            console.log("Hay coincidencias")
+            console.log("Hay coincidencias " + nombrePartitura)
         } else {
-            console.log("Sense resultats")
+            console.log("Sense resultats " + nombrePartitura)
         }
 
     }
 }
 
-partitures.push([
+
+partitures.push(new Partitura("La Balanguera", [
     new Nota("DO", "normal"),
     new Nota("RE", "normal"),
     new Nota("MI", "normal"),
@@ -59,9 +61,9 @@ partitures.push([
     new Nota("SOL", "normal"),
     new Nota("LA", "sostenido"),
     new Nota("LA", "sostenido"),
-]) // La Balanguera
+]));
 
-partitures.push([
+partitures.push(new Partitura("Happy Birthday", [
     new Nota("DO", "normal"),
     new Nota("DO", "normal"),
     new Nota("RE", "normal"),
@@ -74,13 +76,11 @@ partitures.push([
     new Nota("DO", "normal"),
     new Nota("SOL", "normal"),
     new Nota("FA", "normal"),
-]) // Happy Birthday
+]));
 
-// Le damos una nota y el tipo de nota a la función.
 addCerca("MI", "normal");
 addCerca("SOL", "normal");
 
-// Ejecutamos al función para que se ejecute una vez dadas las notas deseadas.
 cercador();
 console.log("Estas son las partituras en las que buscas las coincidencias:", partitures)
 
