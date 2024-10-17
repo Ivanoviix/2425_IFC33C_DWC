@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-       //for
-       for(var i = 0; i < usuarios.length; i++){
-        console.log(usuarios[i].username);
-    }
+        //for
+        for (var i = 0; i < usuarios.length; i++) {
+            console.log(usuarios[i].username);
+        }
 
-    for(var clave in usuarios){
-        console.log(clave);
-    }
+        for (var clave in usuarios) {
+            console.log(clave);
+        }
 
-    //for in -> iterar las propiedades de un objeto
-    for(var clave in usuarios){
-        console.log(clave);
-    }
+        //for in -> iterar las propiedades de un objeto
+        for (var clave in usuarios) {
+            console.log(clave);
+        }
 
-    //for of -> iterar los valores 
-    for(var usuario of usuarios){
-        console.log(usuario.email);
-    }
-        
+        //for of -> iterar los valores 
+        for (var usuario of usuarios) {
+            console.log(usuario.email);
+        }
+
+        let cancion = "Una mosca volaba per la llum";
+
+        // Array de vocales para iterar
+        // let vocales = ['a', 'e', 'i', 'o', 'u'];
+        // for (let vocal of vocales) {
+        // }
+        // for...in devolverá los índices de los elementos del array, es decir, 0, 1, 2, 3, y 4
+        // for...of está diseñado para iterar sobre los valores de arrays y otros objetos iterables, es decir, 'a', 'e', 'i', 'o', 'u'.
     </script>
 </body>
+
 </html>
