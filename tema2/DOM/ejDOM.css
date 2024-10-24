@@ -1,0 +1,23 @@
+#coches {
+    background-color: fuchsia;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 5px solid rgb(255, 217, 0);
+    border-radius: 10px;
+}
+
+tr {
+    color: rgb(145, 255, 0);
+    background-color: rgb(255, 5, 5);
+}
+
+td {
+    border: 2px solid rgb(4, 0, 255);
+}
+
+thead > tr {
+    background-color: rgb(25, 0, 255);
+    color: rgb(255, 0, 0);
+}
