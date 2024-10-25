@@ -37,3 +37,7 @@ console.log("TAREAS MENSUALES")
 repartirTareas(familia_Duran);
 console.log("TAREAS TRIMESTRALES")
 repartirTareas(familia_Sastre);
+
+
+
+

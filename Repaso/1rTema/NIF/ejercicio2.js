@@ -14,9 +14,9 @@ class NIF {
             return false;
         }
         
-        const resto = this.numero % 23;
+        let resto = this.numero % 23;
         
-        const numCorrecto = this.letraNIF.charAt(resto)
+        let numCorrecto = this.letraNIF.charAt(resto)
         // The same const numCorrecto2 = this.letraNIF[resto];
         
 
