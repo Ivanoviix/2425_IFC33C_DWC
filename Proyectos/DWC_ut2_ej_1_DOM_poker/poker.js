@@ -3,6 +3,7 @@
 // par de un numero, has ganado, si no, "has peridod
 
 
+
 const numero = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king"];
 const palo = ["hearts", "diamonds", "clubs", "spades"];
 let hasGanado = false;
@@ -57,6 +58,7 @@ function compararCartas(sacaCartas) {
 }
 
 
+document.getElementById("jugar").addEventListener("click", jugar);
 
 function jugar() {
     if (baraja.length < 5) {
@@ -71,13 +73,14 @@ function jugar() {
 }
 
 function botonVolverAJugar() {
+    const p = document.getElementById("resultado");
     const botonReTry = document.getElementById("jugar");
     if (hasGanado) {
-        botonReTry.disabled = true;
-         /* alert("Has ganado! El juego ha terminado."); */
+        p.innerHTML = "Has ganado!";
+        botonReTry.disabled = true; 
      } else {
-        botonReTry.disabled = false;
-         /* alert("Has perdido! Intenta nuevamente."); */
+        p.innerHTML = "Has perdido! Intenta nuevamente.";
+        botonReTry.disabled = false; 
      }
 }
 
@@ -87,18 +90,21 @@ function imprimeImg(mano) {
 
     for (let i = 0; i < arrayCartas.length; i++) {
         arrayCartas[i].src = ""; 
+        arrayCartas[i].classList.remove("flip"); // Remove flip class to reset
     }
 
     for (let i = 0; i < mano.length; i++) {
         setTimeout(() => {
             if (arrayCartas[i]) {
+                arrayCartas[i].classList.add("flip");
                 arrayCartas[i].src = "cards/" + mano[i].numero + "_of_" + mano[i].palo + ".png";
             }
-        }, i * 80); // Retraso de 500 ms por cada carta
+        }, i * 80); 
     }
 }
 
 
-document.getElementById("jugar").addEventListener("click", jugar);
 crearBaraja();
-jugar()
+
+
+

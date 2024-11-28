@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Navegación Web</title>
+    <script src="gestorNavWeb.js"></script>
+</head>
+<body>
+    <h1>Gestor de Navegación Web</h1>
+
+    <button onclick="mostrarURLActual()">Mostrar URL Actual</button><br><br>
+
+    <button onclick="irAtras()">Ir Atrás</button>
+    <button onclick="irAdelante()">Ir Adelante</button><br><br>
+
+    <button onclick="mostrarInfoNavegador()">Mostrar Información del Navegador</button><br><br>
+
+    <form onsubmit="event.preventDefault(); redirigirURL();">
+        <label for="urlInput">Introduce una URL:</label>
+        <input type="text" id="urlInput" placeholder="https://www.ejemplo.com">
+        <button type="submit">Redirigir</button>
+    </form><br>
+
+    <button onclick="abrirPopup()">Abrir Ventana Emergente</button>
+    <button onclick="cerrarPopup()">Cerrar Ventana Emergente</button>
+</body> 
+</html>
