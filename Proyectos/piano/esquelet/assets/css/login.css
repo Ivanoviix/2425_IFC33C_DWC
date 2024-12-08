@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/background/background11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 50pt;
+    font-family: "Lobster", sans-serif;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.label-form {
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.boton {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(197, 52, 42);;
+    font-style: white;
+    font-size: 10.5pt;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    padding: 10px 70px;
+    box-shadow: 0px 0px 15px 1px #000000c7;
+    color: white;
+    font-family: arial;
+    font-weight: 500;
+}
+
+.boton:hover {
+    background-color: #8e2828;
+}

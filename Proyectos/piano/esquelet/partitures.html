@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="module"  src="./assets/js/piano.js"></script>
-    <script type="module" src="./assets/js/partitures.js"></script>
+    <script type="module" src="./assets/js/partitures.js" defer></script>
     <link rel="stylesheet" href="./assets/css/partitures.css">
     <title>Partitures</title>
 </head>
@@ -12,8 +12,8 @@
     <nav class="navbar">
         <h2>Score Finder</h2>
         <ul class="nav-links">
-            <li class="nav-li" ><a href="partitures.html">Partitures</a></li>
-            <li class="nav-li"><a onclick="abirPopup()" id="abrirLogin" href="">Login</a></li>
+            <li class="nav-li"><a href="partitures.html">Partitures</a></li>
+            <li class="nav-li"><a onclick="abrirPopup()" href="#">Login</a></li>
         </ul>
     </nav>
 
@@ -28,7 +28,6 @@
                 </tr>
             </thead>
            <!--  <tbody>
-
             </tbody> -->
         </table>
     </div>

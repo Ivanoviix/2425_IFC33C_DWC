@@ -1,6 +1,6 @@
 
 var cerca = [];
-const partitures = []
+export const partitures = []
 
 function Nota(nota, tipus) {
     this.nota = nota;

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-size: 23pt;
+    font-family: "Lobster", sans-serif;
+
+}
+
+h5 {
+    font-size: 10pt;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.7rem 1.5rem;
+    background-color: rgb(206, 58, 47);
+    color: white;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+    /* width: 30%; */
+    gap: 1.5rem;
+}
+
+.nav-links > li {
+    width: 100px;
+}
+
+.nav-li>a {
+    text-decoration: none;
+    color: white;
+    padding: 20%;
+    border-left: 1px solid black;
+    text-align: center;
+    margin-right: 20px;
+    height: auto;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1%;
+    width: 95%;
+}
+
+.contenedor>h5 {
+    background-color: rgb(206, 58, 47);
+    color: white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 1px;
+
+}
+
+.contenedor-tabla {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1%;
+    width: 100%;
+}
+
+.contenedor-tabla>thead>tr, .contenedor-tabla>tbody>tr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+}
+
+
+.contenedor-tabla>thead>tr {
+    margin-top: 1%;
+    color: white;
+    background-color: rgb(206, 58, 47);
+    font-size: 10pt;
+
+}
+
+.contenedor-tabla>thead>tr>th {
+    font-weight: 500;
+    padding: 5px 0 5px 0px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.contenedor-tabla>tbody>tr {
+    background-color: rgb(206, 58, 47);
+}
+
+
+.contenedor-tabla>tbody>tr>td {
+    padding-left: 5px;
+    border: 1px solid white;
+}
+
+.contenedor-tabla>tbody>tr:nth-of-type(odd) {
+    background-color: white;
+    
+}
+
+.contenedor-tabla>tbody> tr:nth-of-type(even) {
+    background-color: rgba(128, 128, 128, 0.219); 
+
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11pt;
+}
