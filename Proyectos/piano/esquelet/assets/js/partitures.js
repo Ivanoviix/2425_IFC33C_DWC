@@ -84,14 +84,19 @@ function BorrarPartitura(posicion) {
     }
    
 }
-
+// Función para abrirPopup
 function abrirPopup() {
-    const login = "./login.html"
-    const pagina = window.open(login, "PopupLogin", "width=500px, height=500px, resizable=yes, scrollbars=yes, justify-content:center;")
+    const login = "./login.html";
+    let width = 600;
+    let height = 450;
+    let left = (screen.width / 2) - (width / 2);
+    let top = (screen.height / 2) - (height / 2);
+    const pagina = window.open(login, "PopupLogin", `width=${width}px, height=${height}px, left=${left}px, top=${top}px, resizable=yes, scrollbars=yes`);
 
     if (!pagina) {
-        console.log("La pagina no está operativa actualmente.")
+        console.log("La pagina no está operativa actualmente.");
         alert("Habilita los popups en tu navegador para esta página.");
     }
 }
+
 window.abrirPopup = abrirPopup;

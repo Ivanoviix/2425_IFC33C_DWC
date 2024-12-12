@@ -54,7 +54,7 @@ function sayHello(greeting) {
 }
 
 
-/*
+
 function saludar(saludo) {
     console.log(`${saludo}, ${this.nombre}`);
 }
@@ -64,7 +64,7 @@ saludar("Hola");
 
 saludar.call(persona1, 'Hola');
 saludar.apply(persona1, ['Uep']);
- */
+ 
 
 
 const person1 = { name: 'Dana' };

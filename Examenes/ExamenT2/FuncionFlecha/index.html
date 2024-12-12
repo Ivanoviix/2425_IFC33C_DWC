@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Personas</title>
+</head>
+<body>
+    <script>
+        const personas = [
+            { nombre: 'Ana', edad: 28 },
+            { nombre: 'Juan', edad: 35 },
+            { nombre: 'Lucía', edad: 22 },
+            { nombre: 'Pedro', edad: 30 }
+        ];
+
+        personas.sort((a, b) => a.edad - b.edad);
+
+
+        const tabla = document.createElement('table');
+        const thead = document.createElement('thead');
+        const thNo = document.createElement('th');
+        const thEd = document.createElement('th');
+
+        thNo.textContent = 'Nombre';
+        thEd.textContent = 'Edad';
+        thead.appendChild(thNo);
+        thead.appendChild(thEd);
+        tabla.appendChild(thead);
+
+        personas.forEach( persona => {
+            const tbody = document.createElement('tbody');
+            const tr = document.createElement('tr');
+            const tdNombre = document.createElement('td');
+            const tdEdad = document.createElement('td');
+            tdNombre.textContent = persona.nombre;
+            tdEdad.textContent = persona.edad;
+            tr.appendChild(tdNombre);
+            tr.appendChild(tdEdad);
+            tbody.appendChild(tr);
+            tabla.appendChild(tbody);
+        });
+        document.body.appendChild(tabla);
+    </script>
+</body>
+</html>

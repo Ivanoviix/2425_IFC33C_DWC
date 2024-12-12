@@ -9,6 +9,11 @@
 
 <body>
     <script>
+        var usuarios = [
+            { username: 'juan', edad: 25 },
+            { username: 'maria', edad: 30 },
+            { username: 'pedro', edad: 35 }
+        ];
         //for
         for (var i = 0; i < usuarios.length; i++) {
             console.log(usuarios[i].username);
@@ -25,7 +30,11 @@
 
         //for of -> iterar los valores 
         for (var usuario of usuarios) {
-            console.log(usuario.email);
+            console.log("Nombresss", usuario.username);
+        }
+
+        for (var user of usuarios) {
+            console.log("Nombresss", user.edad); 
         }
 
         let cancion = "Una mosca volaba per la llum";

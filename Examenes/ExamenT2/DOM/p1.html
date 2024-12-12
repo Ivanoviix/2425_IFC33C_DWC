@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app" name="nombre" class="clase">Això és div1</div>
+    <div id="app" name="nombre" class="clase">Això és div1</div>
+    <div id="app" name="nombre" class="clase">Això és div1</div>
+    <div id="app" name="nombre" class="clase">Això és div1</div>
+
+    <div id="body">
+        <div>Això és div2</div>
+        <div>Altre div</div>
+    </div>
+    
+    <script>
+      /*  var div1 = document.getElementById("app");
+        var div2 = document.getElementsByName("nombre");
+        var div3 = document.getElementsByClassName('clase');
+        
+        div1.textContent = "Canviat per JavaScript!";
+        div1.style.backgroundColor = "yellow";
+        
+        div2[1].textContent = "Canviat per JavaScript!";
+        div2[1].style.backgroundColor = "blue";
+        
+        div3.textContent = "Canviat per JavaScript!";
+        div3.style.backgroundColor = "green";
+*/
+        function Usuario(nombre, edad, email) {
+            this.nombre = nombre;
+            this.edad = edad;
+            this.email = email;
+        }
+        let usuario = { 
+            nombre: "Pepito",
+            edad: 25,
+            email: "Pepito@gmail.com"}
+
+        for (let key in usuario) {
+            console.log(key + ": " + usuario[key]);
+        }
+
+        let x = 10;
+        let y = 20;
+        let a = (x < y) ? "Es mayor X" : "Es mayor Y";
+        console.log(a);
+        
+
+    </script>
+</body>
+</html>

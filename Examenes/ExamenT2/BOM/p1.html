@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control del Historial y Cambio de URL</title>
+    <script>
+        function init() {
+            // Ejercicio 7: Control del Historial
+            document.getElementById("back").onclick = function() {
+                history.back();
+            };
+
+            document.getElementById("forward").onclick = function() {
+                history.forward();
+            };
+
+            document.getElementById("reload").onclick = function() {
+                location.reload();
+            };
+
+            function updateHistoryCount() {
+                document.getElementById("history-count").textContent = history.length;
+            }
+
+            updateHistoryCount();
+
+            // Ejercicio 8: Cambiar la URL Dinámicamente
+            document.getElementById("change-url").onsubmit = function(event) {
+                event.preventDefault();
+                const newUrl = document.getElementById("new-url").value;
+                history.pushState(null, "", newUrl);
+                document.getElementById("current-url").textContent = window.location.href;
+            };
+        }
+
+        window.onload = init;
+    </script>
+</head>
+<body>
+    <h1>Control del Historial</h1>
+    <button id="back">Atrás</button>
+    <button id="forward">Adelante</button>
+    <button id="reload">Recargar</button>
+    <p>Historial visitado: <span id="history-count"></span> páginas</p>
+
+    <h1>Cambiar la URL Dinámicamente</h1>
+    <form id="change-url">
+        <label for="new-url">Nueva URL:</label>
+        <input type="text" id="new-url" name="new-url" required>
+        <button type="submit">Cambiar URL</button>
+    </form>
+    <p>URL actual: <span id="current-url"></span></p>
+</body>
+</html>

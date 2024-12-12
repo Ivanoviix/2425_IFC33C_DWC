@@ -17,3 +17,15 @@ function anagrama(texto1, texto2) {
 }
 
 anagrama(texto1, texto2);
+
+function generarArray(tamano) {
+    let array = [];
+    for (let i = 0; i < tamano; i++) {
+        array.push(Math.floor(Math.random() * 15) + 1);
+    }
+    return array;
+}
+
+let tamano = parseInt(prompt("Introduce el tamaño del array: "));
+let arrayRandom = generarArray(tamano);
+console.log(arrayRandom);

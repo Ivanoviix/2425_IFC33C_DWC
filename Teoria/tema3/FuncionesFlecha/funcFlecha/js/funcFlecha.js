@@ -70,6 +70,7 @@ let suma = (param1, param2) => param1 + param2; // Retorno implícito. (Solo ped
  */
 
 
+
 // Ejercicios: 
 // 1 PROPIEDAD:
 
