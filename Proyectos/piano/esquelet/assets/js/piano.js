@@ -1,6 +1,5 @@
-
 var cerca = [];
-export const partitures = []
+const partitures = []
 
 function Nota(nota, tipus) {
     this.nota = nota;
@@ -50,7 +49,6 @@ function cercador() {
         }
     }
 }
-
 
 partitures.push(new Partitura("La Balanguera", "ca", [
     new Nota("DO", "normal"),

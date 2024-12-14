@@ -1,6 +1,3 @@
-import { partitures } from '../js/piano.js';
-
-
 // Obtengo la tabla mediante el nombre de la clase.
 let tabla = document.getElementsByClassName('contenedor-tabla')[0];
 // Creación del tbody para la tabla.
@@ -35,16 +32,10 @@ function crearTablaPartituras(partitures) {
             let deleteButton = document.createElement('button');
             let deleteImg = document.createElement('img');
             // Aplico el src del icono al boton deleteImg.
-            deleteImg.src = "./assets/img/icons/trash.svg";
+            deleteImg.src = "./assets/img/icons/trash.svg"; 
             deleteButton.appendChild(deleteImg);
             deleteButton.append(" Borrar");
             tdAccion.appendChild(deleteButton);
-
-            // Añado los eventos a los botones.
-            /* editButton.addEventListener('click', function() {
-                EditarPartitura(posicion);
-            }); Se activa el evento de deletebutton despues de pulsar editButton, 
-                hay que configurar este paso correctamente*/
 
             deleteButton.addEventListener('click', function() {
                 BorrarPartitura(posicion);
