@@ -1,0 +1,40 @@
+// MIRAR
+let tabla = document.getElementsByClassName('contenedor-tabla')[0];
+let id = document.getElementById('contenedor')
+foEach
+window
+manejar array de diccionarios
+DOM
+bom 
+funciones flecha 
+this 
+callback 
+
+1r Tema 
+Slice 
+Splice 
+Split
+Join 
+
+clases 
+
+
+9 Una array de diccionarios 
+
+
+usuarios: 
+    columnas id, nom, edad, correo  (cabecera)
+    filas id, nom, edad, correo (info)
+
+crea una tabla html con su cabecera y la info de la cabecera
+
+
+8 Saca todos los usuarios activos y suma las horas totales y suma las horas de la gente activa y metela en un objeto con 
+  los trabajodores activos, osea la cantidad y las horas en total trabajaas
+
+usuarios 
+    nombre, trabajo: activo o desactivado, horas 1.2
+    nombre, trabajo: activo o desactivado, horas 2.5
+    nombre, trabajo: activo o desactivado, horas 3
+
+7 Crea una metodo donde salga un aviso con "cargando la pantalla..." donde si la pantalla es menor o igual de 768px, haya un mensaje con "adaptado a movil" y si es mayor, "adaptador a ordenador"
