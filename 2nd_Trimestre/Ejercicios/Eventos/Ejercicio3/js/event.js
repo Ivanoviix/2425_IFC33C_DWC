@@ -1,1 +1,0 @@
-// Ejercicio 3: Explorar eventos mediante el inspector del navegador
