@@ -1,5 +1,12 @@
 let ojb = json.parse(libro) --> Para convertir un json en un objeto de js
+JSON.parse(jsonStr)	= Convierte una cadena JSON en un objeto JS
 
 let otroJson = json.stringify(libroObj) --> Para convertir un obj en json.
                 El metodo se tiene que pasar en string para que no quede inutilizada. metodo.toString()
-                
+
+JSON.stringify(obj)	= Convierte un objeto JS en una cadena JSON
+
+sctructuredClown = Hace copias.
+Promise.all =  Si una de las promesas falla, Promise.all se rechaza inmediatamente y no espera a que las otras promesas se resuelvan o se rechacen.
+allSettled() = Espera a que todas las promesas se resuelvan o se rechacen y luego devuelve un array de objetos que describen el resultado de cada promesa.
+
