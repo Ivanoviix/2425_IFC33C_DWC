@@ -1,0 +1,5 @@
+let ojb = json.parse(libro) --> Para convertir un json en un objeto de js
+
+let otroJson = json.stringify(libroObj) --> Para convertir un obj en json.
+                El metodo se tiene que pasar en string para que no quede inutilizada. metodo.toString()
+                

@@ -1,0 +1,33 @@
+GRANDES ->  Grande ancho, Mediano ancho
+
+
+MEDIANOS -> Mediano ancho, pequeño.
+
+
+VERTICALES -> Grande alto, Mediano alto.
+
+
+Grande Ancho: Agua, Leche, Aceite, 
+Grande Alto: Agua, Leche, Aceite, Vinagre.
+Mediano Ancho: Agua, Leche, Vinagre, Aceite.
+Mediano Alto: Lejía, Amoniaco, Aguarrás, Gasolina, Alcohol.
+Pequeño: Jabón, Alcohol.
+
+
+
+let contenedores = {
+    "Grandes" : {
+        "Grande Ancho": ["Agua", "Leche", "Aceite"],
+        "Mediano Ancho": ["Agua", "Leche", "Aceite", "Vinagre"] 
+    },
+    "Medianos" : {
+        "Mediano ancho": ["Agua", "Leche", "Aceite", "Vinagre"],
+        "Pequeño": ["Jabón", "Alcohol"]
+    },
+    "Verticales" : {
+        "Grande Alto": ["Agua", "Leche", "Aceite", "Vinagre"],
+        "Mediano Alto": ["Lejía", "Amoniaco", "Aguarrás", "Gasolina", "Alcohol"]
+    }
+}
+
+Objeto_a_Json = json.stringify(contenedores);
