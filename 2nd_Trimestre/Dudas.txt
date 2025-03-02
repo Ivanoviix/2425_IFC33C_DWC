@@ -5,8 +5,82 @@ let otroJson = json.stringify(libroObj) --> Para convertir un obj en json.
                 El metodo se tiene que pasar en string para que no quede inutilizada. metodo.toString()
 
 JSON.stringify(obj)	= Convierte un objeto JS en una cadena JSON
+El método filter() crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
+resultado.slice(0,5)
+ 
+ resultado.slice(0,5).forEach(element => {
+            console.log(element.title)
 
 sctructuredClown = Hace copias.
 Promise.all =  Si una de las promesas falla, Promise.all se rechaza inmediatamente y no espera a que las otras promesas se resuelvan o se rechacen.
+Promise.race = Devuelve una promesa que se cumple o se rechaza tan pronto como una de las promesas en el iterable se cumple o se rechaza.
 allSettled() = Espera a que todas las promesas se resuelvan o se rechacen y luego devuelve un array de objetos que describen el resultado de cada promesa.
+(REPASAR ALLSETTLED, ALL Y RACE)
+
+EJERCICIO 8, ejercicio8.js:47 Uncaught (in promise) ReferenceError: Cannot access 'promesa3' before initialization
+function simulationDownloader() {
+    let promesa1 = new Promise((resolve, reject) => { // Si no pongo return, me da error de undefined
+        setTimeout(() => {                    // PONER RETURN EN LA PROMESA SI NECESITO DEVOLVER UN VALOR!
+            let simulation = "Iniciando la descarga..."; // PONER SetTimeout ENTRO DE LA PROMESA.
+            resolve(simulation);
+        }, 1000);
+    });
+    let promesa2 = new Promise((resolve, reject) => { 
+        setTimeout(() => {             
+            let simulation = "Realizando la descarga..."; 
+            resolve(simulation);
+        }, 3000);
+    });
+    let promesa3 = new Promise((resolve, reject) => {
+        setTimeout(() => {            
+            let simulation = "Guardando la descarga..."; 
+            resolve(simulation);
+        }, 5000);
+    });
+        promesa1.then((respuesta) => {
+            console.log(respuesta)
+        })
+        promesa2.then((respuesta) => {
+            console.log(respuesta)
+        })
+        promesa3.then((respuesta) => {
+            console.log(respuesta)
+        })
+
+}
+
+function startSimulation() {
+    simulationDownloader();
+}
+
+
+
+
+
+CHULETILLAS:
+JS Basico 
+DOM/BOM
+Callbacks/Eventos
+JSON
+Asincronia/Promesas/Fetch/
+Cookies
+Errores
+6 medias caras
+
+PETICION HHTP
+    - metodo  
+    - header
+    - body (CON POST)
+
+RESPUESTA HTTP:
+    - Código Respuesta / Status (ok o no ok)
+    - headers 
+    - body (json)
+
+
+REVISAR PDFS y hacer apuntes.
+
+
+FETCH:
+1. Ejercicio 3 REVISAR
 

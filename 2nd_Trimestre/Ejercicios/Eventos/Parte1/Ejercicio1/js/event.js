@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', cargarCodigo);
 
 function cargarCodigo() {
-    let contenedor = document.getElementsByClassName('contenedor')[0];
+    let contenedor = document.getElementsByClassName('contenedor');
     let boton1 = document.getElementById('boton1');
     let input1 = document.getElementById('input1');
 

@@ -31,6 +31,26 @@
         }
 
         console.log(resultado)
+
+
+        const usuarios = [
+    { nombre: "Bruno" , edad: 10},
+    { nombre: "Carlos" , edad: 18},
+    { nombre: "Beatriz" , edad: 15},
+    { nombre: "Andrés" , edad: 14},
+    { nombre: "Bernardo" , edad: 10}
+];
+
+const usuariosConB = [];
+
+usuarios.forEach(usuario => {
+    if (usuario.nombre.startsWith("B")) {
+        usuariosConB.push(usuario);
+    }
+});
+
+console.log(usuariosConB)
+console.log(usuariosConB); // ["Bruno", "Beatriz", "Bernardo"]
     </script>
 </body>
 </html>

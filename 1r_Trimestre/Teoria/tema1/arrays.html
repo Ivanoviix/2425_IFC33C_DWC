@@ -9,7 +9,8 @@
    <script>
     var frutas = ["manzana", "pera", "uva", "fresa", "mango"];
     console.log(frutas[0], frutas[1], frutas[2], frutas[3], frutas[4]); //obtenemos los valores de cada posición del array 
-
+    frutas.splice(1,2) //borramos dos elementos a partir de la posición 1 solo uno. (posición, cantidad)
+    console.log("HOLA",frutas, frutas[1]); //elimina elemento e índice
     frutas.push("sandia") //agregamos un nuevo valor al final del array
     console.log(frutas);
 
@@ -33,7 +34,7 @@
     console.log(frutas, frutas[1]);
 
     frutas.splice(1,1) //borramos dos elementos a partir de la posición 1 solo uno. (posición, cantidad)
-    console.log(frutas, frutas[1]); //elimina elemento e índice
+    console.log("HOLA",frutas, frutas[1]); //elimina elemento e índice
 
 
     // Ordenar

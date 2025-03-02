@@ -1,0 +1,58 @@
+1r API Fetch
+Then Catch
+Async/Await funciona con Then y Catch
+
+
+Promesas --> new Promise
+Async/Await
+Se paso de las promesas (son muy engorrosas) al Async/await por que era más comodo.
+Callbacks --> Callbacks Hell
+
+
+
+1r API Fetch (lo más usado o más actual)
+2nd Axios, es una libreria que permite hacer lo mismo que Fetch
+3r XMLHTTpRequest
+
+
+
+
+ARQUITECTURA: js Vanilla.
+COMUNICACIÓN DE LA API: Fetch 
+                                .then 
+                                .catch
+
+COMPONENTES PRINCIPALES:
+                       1    .login / inicio de sesión.
+                            .Control del Token.
+                       2.   .Ver listado amigos o grupos.
+                       3.   .Ver mensajes del grupo o amigo.
+                       4.   .Modificar la configuración.
+                       
+Login:
+Formulario
+Validación
+    - Se tiene que conectar al módulo que se encarga de conectase a la API.
+
+Inicio Sesión:
+    - Recibir el Token JWT para tener acceso.
+    - 
+
+Dentro del Whatsapp:
+    - Craer nuevo chat 
+    - Crear nuevo grupo (añadir usuarios)
+    - Abrir chat
+    - Recibir mensajes no leidos al entrar (alertas o indicaciones)
+    - Borrar un chat
+    - Salirse de un grupo (si eres admin, se pasa al segundo usuario añadido)
+
+![alt text](image.png)
+
+URL --> Producción.
+    --> Desarrollo.
+
+Agregar en el navegador daily.dev
+
+Clase dia 23/01/2025
+
+![alt text](image-1.png)
